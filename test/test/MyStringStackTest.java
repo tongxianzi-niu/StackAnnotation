@@ -52,8 +52,7 @@ public class MyStringStackTest extends TestCase {
         } catch (NoSuchElementException e) {}
         
 		stack.push(s1);
-		//assertFalse("Stack should not be empty after push()", stack.isEmpty());
-		assertTrue ( stack.isEmpty());
+		assertFalse("Stack should not be empty after push()", stack.isEmpty());
 		
 		try {
 			o1 = stack.pop();
